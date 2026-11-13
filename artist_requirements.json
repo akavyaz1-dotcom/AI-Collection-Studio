@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "source": "Playrix test assignment and supplied Miro reference screenshots",
+  "scope": "Non-gold collectible object illustrations",
+  "set_rules": [
+    {"id":"SET-01","mandatory":true,"check":"exactly_10_cards","method":"code"},
+    {"id":"SET-02","mandatory":true,"check":"all_categories_present","categories":[1,2,3,4],"method":"code"},
+    {"id":"SET-03","mandatory":true,"check":"no_gold_cards","method":"code"},
+    {"id":"SET-04","mandatory":true,"check":"objects_fit_genre_and_form_coherent_diverse_set","method":"visual_review"}
+  ],
+  "category_rules": {
+    "1": [
+      {"id":"CAT1-01","mandatory":true,"criterion":"Object has no small details","method":"visual_review"},
+      {"id":"CAT1-02","mandatory":true,"criterion":"Object floats in air","method":"visual_review"},
+      {"id":"CAT1-03","mandatory":true,"criterion":"Background is a solid color, gradient, or simple pattern","method":"visual_review"}
+    ],
+    "2": [
+      {"id":"CAT2-01","mandatory":true,"criterion":"Object has no small details","method":"visual_review"},
+      {"id":"CAT2-02","mandatory":true,"criterion":"Object stands on a surface","method":"visual_review"},
+      {"id":"CAT2-03","mandatory":true,"criterion":"Background is simple, with a vertical surface or simple color, gradient, or pattern","method":"visual_review"}
+    ],
+    "3": [
+      {"id":"CAT3-01","mandatory":true,"criterion":"Object stands on a realistic surface","method":"visual_review"},
+      {"id":"CAT3-02","mandatory":true,"criterion":"Object is placed within a simple dimensional environment; background remains simple","method":"visual_review"}
+    ],
+    "4": [
+      {"id":"CAT4-01","mandatory":true,"criterion":"Object is integrated into a realistic surrounding environment","method":"visual_review"},
+      {"id":"CAT4-02","mandatory":true,"criterion":"Object remains the central visual subject","method":"visual_review"}
+    ]
+  },
+  "reference_style": [
+    {"id":"STYLE-01","criterion":"Colorful stylized casual-game art, not photographic realism","method":"reference_comparison"},
+    {"id":"STYLE-02","criterion":"Readable silhouettes, simplified forms, dimensional shading and bright colors","method":"reference_comparison"},
+    {"id":"STYLE-03","criterion":"Consistent visual treatment across the full set","method":"set_reference_comparison"}
+  ],
+  "internal_constraints_not_explicit_in_brief": [
+    {"id":"INT-01","criterion":"Portrait 3:4 aspect ratio"},
+    {"id":"INT-02","criterion":"Minimum 768x1024 pixels"}
+  ],
+  "decision_policy": {
+    "PASS":"Requirement satisfied with adequate evidence",
+    "FAIL":"Clear violation of an explicit mandatory requirement",
+    "REVIEW":"Ambiguous or insufficient evidence; do not auto-reject",
+    "SUGGESTION":"Optional artistic improvement; does not block approval",
+    "note":"Model opinions alone are not proof of violation. Include requirement ID and visual evidence for each verdict."
+  }
+}
